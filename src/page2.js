@@ -1,2 +1,2 @@
-
-console.log("This is page 2!");
+var log = require("./lib").log;
+log("This is page 2!");

@@ -1,2 +1,3 @@
+var log = require("./lib").log;
 
-console.log("This is page 1!");
+log("This is page 1!");
