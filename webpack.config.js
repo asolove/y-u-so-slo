@@ -1,3 +1,5 @@
+var webpack = require("webpack");
+
 module.exports = {
     entry: {
         page1: "./src/page1",
@@ -7,5 +9,10 @@ module.exports = {
         path: './built',
         filename: "[name].js",
         chunkFilename: "[id].js"
-    }
+    },
+    plugins: [
+      new webpack.optimize.CommonsChunkPlugin({
+        name: 'common'
+      })
+    ]
 }
