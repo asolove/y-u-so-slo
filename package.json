@@ -17,5 +17,8 @@
     "babel-preset-stage-1": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "webpack": "^1.13.0"
+  },
+  "dependencies": {
+    "react": "^15.1.0"
   }
 }
