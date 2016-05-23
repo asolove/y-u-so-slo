@@ -1,0 +1,459 @@
+Statistical profiling result from isolate-0x101804a00-v8.log, (702 ticks, 3 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    485   69.1%          /Users/adam/.nvm/versions/node/v4.4.4/bin/node
+     47    6.7%          /usr/lib/system/libsystem_kernel.dylib
+     23    3.3%          /usr/lib/system/libsystem_malloc.dylib
+     14    2.0%          /usr/lib/system/libsystem_platform.dylib
+      8    1.1%          /usr/lib/system/libsystem_c.dylib
+      3    0.4%          /usr/lib/system/libsystem_pthread.dylib
+      1    0.1%          /usr/lib/libstdc++.6.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     27    3.8%   22.3%  RegExp: ^(\\/?|)([\\s\\S]*?)((?:\\.{1\,2}|[^\\/]+?|)(\\.[^.\\/]*|))(?:[\\/]*)$
+      4    0.6%    3.3%  KeyedLoadIC: A keyed load IC from the snapshot
+      3    0.4%    2.5%  LazyCompile: ~Module._findPath module.js:128:28
+      2    0.3%    1.7%  Stub: CompareICStub
+      2    0.3%    1.7%  Stub: CallConstructStub
+      2    0.3%    1.7%  LazyCompile: ~pp.parseExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:83:31
+      2    0.3%    1.7%  LazyCompile: ~normalize /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/node_modules/memory-fs/lib/normalize.js:18:36
+      2    0.3%    1.7%  LazyCompile: *pp.eat /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1418:19
+      2    0.3%    1.7%  LazyCompile: *normalizeArray path.js:17:24
+      2    0.3%    1.7%  LazyCompile: *exec native regexp.js:85:22
+      1    0.1%    0.8%  Stub: RecordWriteStub {2}
+      1    0.1%    0.8%  Stub: RecordWriteStub {1}
+      1    0.1%    0.8%  Stub: RecordWriteStub
+      1    0.1%    0.8%  Stub: LoadICStub
+      1    0.1%    0.8%  Stub: LoadFieldStub
+      1    0.1%    0.8%  Stub: LoadConstantStub
+      1    0.1%    0.8%  Stub: InternalArraySingleArgumentConstructorStub
+      1    0.1%    0.8%  Stub: GrowArrayElementsStub
+      1    0.1%    0.8%  Stub: CompareNilICStub
+      1    0.1%    0.8%  Stub: CompareICStub {2}
+      1    0.1%    0.8%  Stub: CompareICStub {1}
+      1    0.1%    0.8%  Stub: CEntryStub {1}
+      1    0.1%    0.8%  Stub: CEntryStub
+      1    0.1%    0.8%  Stub: BinaryOpWithAllocationSiteStub
+      1    0.1%    0.8%  StoreMegamorphic: args_count: 0
+      1    0.1%    0.8%  RegExp: (^|\\/[^\\/]+)\\/+\\.\\.\\/+
+      1    0.1%    0.8%  LazyCompile: ~walkMemberExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:739:70
+      1    0.1%    0.8%  LazyCompile: ~walkIdentifier /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:758:58
+      1    0.1%    0.8%  LazyCompile: ~replace native string.js:146:23
+      1    0.1%    0.8%  LazyCompile: ~registerType /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-types/lib/index.js:350:22
+      1    0.1%    0.8%  LazyCompile: ~pp.skipSpace /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:2549:25
+      1    0.1%    0.8%  LazyCompile: ~pp.parseVar /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:2035:24
+      1    0.1%    0.8%  LazyCompile: ~pp.parseStatement /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1687:30
+      1    0.1%    0.8%  LazyCompile: ~pp.parseExprOps /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:148:28
+      1    0.1%    0.8%  LazyCompile: ~pp.parseExprAtom /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:267:29
+      1    0.1%    0.8%  LazyCompile: ~pp.parseBlock /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1984:26
+      1    0.1%    0.8%  LazyCompile: ~posix.resolve path.js:419:25
+      1    0.1%    0.8%  LazyCompile: ~map native array.js:1022:18
+      1    0.1%    0.8%  LazyCompile: ~finishNodeAt /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1249:22
+      1    0.1%    0.8%  LazyCompile: ~exports.runInThisContext vm.js:52:36
+      1    0.1%    0.8%  LazyCompile: ~defineProperty native v8natives.js:763:30
+      1    0.1%    0.8%  LazyCompile: ~applyPlugins /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:30:64
+      1    0.1%    0.8%  LazyCompile: ~ToObject native runtime.js:581:18
+      1    0.1%    0.8%  LazyCompile: ~Storage.finished /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:27:38
+      1    0.1%    0.8%  LazyCompile: ~NativeModule.wrap node.js:942:31
+      1    0.1%    0.8%  LazyCompile: ~Module._resolveLookupPaths module.js:209:38
+      1    0.1%    0.8%  LazyCompile: ~InnerArraySort.aC native array.js:672:12
+      1    0.1%    0.8%  LazyCompile: ~InnerArrayJoin native array.js:317:24
+      1    0.1%    0.8%  LazyCompile: ~Dependency.compare /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Dependency.js:22:30
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> fs.js:81:18
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/Resolver.js:179:19
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/FileAppendPlugin.js:30:14
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/FileAppendPlugin.js:19:26
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:256:49
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:234:51
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/DependenciesBlock.js:32:36
+      1    0.1%    0.8%  LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Compilation.js:185:35
+      1    0.1%    0.8%  LazyCompile: Join native array.js:102:14
+      1    0.1%    0.8%  LazyCompile: *walkIdentifier /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:758:58
+      1    0.1%    0.8%  LazyCompile: *test native regexp.js:132:20
+      1    0.1%    0.8%  LazyCompile: *split native string.js:420:23
+      1    0.1%    0.8%  LazyCompile: *realpathSync fs.js:1379:40
+      1    0.1%    0.8%  LazyCompile: *pp.updateContext /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:2344:29
+      1    0.1%    0.8%  LazyCompile: *posix.resolve path.js:419:25
+      1    0.1%    0.8%  LazyCompile: *indexOf native array.js:1076:22
+      1    0.1%    0.8%  LazyCompile: *Buffer.toString buffer.js:369:37
+      1    0.1%    0.8%  KeyedStoreIC:  {487}
+      1    0.1%    0.8%  KeyedLoadIC: A keyed load IC from the snapshot {2}
+      1    0.1%    0.8%  KeyedLoadIC: A keyed load IC from the snapshot {1}
+      1    0.1%    0.8%  Handler: resolve
+      1    0.1%    0.8%  Handler: pipesCount
+      1    0.1%    0.8%  Handler: length
+      1    0.1%    0.8%  Handler: curContext
+      1    0.1%    0.8%  Handler: An IC handler from the snapshot {2}
+      1    0.1%    0.8%  Handler: An IC handler from the snapshot {1}
+      1    0.1%    0.8%  Handler: An IC handler from the snapshot
+      1    0.1%    0.8%  Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/node_modules/graceful-fs/legacy-streams.js:1:11
+      1    0.1%    0.8%  Builtin: JSConstructStubApi
+      1    0.1%    0.8%  Builtin: FunctionApply
+      1    0.1%    0.8%  Builtin: ArgumentsAdaptorTrampoline
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+    118   16.8%   97.5%  JavaScript
+      0    0.0%    0.0%  C++
+     23    3.3%   19.0%  GC
+    581   82.8%          Shared libraries
+      3    0.4%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+    485   69.1%  /Users/adam/.nvm/versions/node/v4.4.4/bin/node
+    456   94.0%    /Users/adam/.nvm/versions/node/v4.4.4/bin/node
+     91   20.0%      LazyCompile: *exports.runInThisContext vm.js:52:36
+     91  100.0%        LazyCompile: ~Module._compile module.js:366:37
+     89   97.8%          LazyCompile: *Module._extensions..js module.js:414:37
+     67   75.3%            LazyCompile: ~Module.load module.js:334:33
+     22   24.7%            LazyCompile: *Module.load module.js:334:33
+      2    2.2%          LazyCompile: ~Module._extensions..js module.js:414:37
+      2  100.0%            LazyCompile: ~Module.load module.js:334:33
+     30    6.6%      LazyCompile: ~exports.runInThisContext vm.js:52:36
+     30  100.0%        LazyCompile: ~Module._compile module.js:366:37
+     30  100.0%          LazyCompile: ~Module._extensions..js module.js:414:37
+     30  100.0%            LazyCompile: ~Module.load module.js:334:33
+     18    3.9%      LazyCompile: ~Module._findPath module.js:128:28
+     16   88.9%        LazyCompile: *Module._resolveFilename module.js:311:35
+     15   93.8%          LazyCompile: Module._load module.js:271:24
+      7   46.7%            LazyCompile: *require internal/module.js:11:19
+      6   40.0%            LazyCompile: ~Module.require module.js:350:36
+      2   13.3%            LazyCompile: ~require internal/module.js:11:19
+      1    6.3%          LazyCompile: ~require.resolve internal/module.js:15:29
+      1  100.0%            Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/node-libs-browser/index.js:1:11
+      2   11.1%        LazyCompile: ~Module._resolveFilename module.js:311:35
+      2  100.0%          LazyCompile: Module._load module.js:271:24
+      2  100.0%            LazyCompile: ~Module.require module.js:350:36
+     16    3.5%      LazyCompile: ~runInThisContext node.js:870:28
+     16  100.0%        LazyCompile: ~NativeModule.compile node.js:951:44
+     16  100.0%          LazyCompile: NativeModule.require node.js:885:34
+      3   18.8%            Function: ~<anonymous> module.js:1:11
+      2   12.5%            LazyCompile: ~startup node.js:13:19
+      2   12.5%            LazyCompile: Module._load module.js:271:24
+      2   12.5%            Function: ~<anonymous> tty.js:1:11
+      1    6.3%            LazyCompile: ~startup.globalVariables node.js:179:37
+      1    6.3%            LazyCompile: ~startup.globalTimeouts node.js:189:36
+      1    6.3%            Function: ~<anonymous> timers.js:1:11
+      1    6.3%            Function: ~<anonymous> stream.js:1:11
+      1    6.3%            Function: ~<anonymous> buffer.js:1:11
+      1    6.3%            Function: ~<anonymous> assert.js:1:11
+      1    6.3%            Function: <anonymous> crypto.js:1:11
+     10    2.2%      LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      2   20.0%        LazyCompile: ~evaluateExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:786:66
+      1   50.0%          LazyCompile: ~walkCallExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:691:66
+      1  100.0%            LazyCompile: ~walkExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:550:58
+      1   50.0%          LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/ConstPlugin.js:18:49
+      1  100.0%            LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      2   20.0%        LazyCompile: *getRenameIdentifier /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:344:68
+      2  100.0%          LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:517:30
+      2  100.0%            LazyCompile: *InnerArrayForEach native array.js:924:27
+      2   20.0%        LazyCompile: *<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:224:45
+      2  100.0%          LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1   50.0%            LazyCompile: *getRenameIdentifier /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:344:68
+      1   50.0%            LazyCompile: *<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:256:49
+      1   10.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js:31:30
+      1  100.0%          LazyCompile: ~<anonymous> native v8natives.js:1199:16
+      1  100.0%            LazyCompile: ~inScope /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:766:44
+      1   10.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:256:49
+      1  100.0%          LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1  100.0%            LazyCompile: ~evaluateExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:786:66
+      1   10.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:224:45
+      1  100.0%          LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1  100.0%            LazyCompile: ~evaluateExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:786:66
+      1   10.0%        LazyCompile: *evaluateExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:786:66
+      1  100.0%          LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/CommonJsRequireDependencyParserPlugin.js:35:40
+      1  100.0%            LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+     10    2.2%      LazyCompile: *realpathSync fs.js:1379:40
+     10  100.0%        LazyCompile: *tryFile module.js:106:17
+     10  100.0%          LazyCompile: ~tryExtensions module.js:116:23
+     10  100.0%            LazyCompile: ~Module._findPath module.js:128:28
+
+     47    6.7%  /usr/lib/system/libsystem_kernel.dylib
+     24   51.1%    /Users/adam/.nvm/versions/node/v4.4.4/bin/node
+      1    4.2%      LazyCompile: ~walkExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:550:58
+      1  100.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:517:30
+      1  100.0%          LazyCompile: ~InnerArrayForEach native array.js:924:27
+      1  100.0%            LazyCompile: ~forEach native array.js:943:22
+      1    4.2%      LazyCompile: ~some native array.js:969:19
+      1  100.0%        Function: ~<anonymous> node.js:10:10
+      1    4.2%      LazyCompile: ~replacePathVariables /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/TemplatedPathPlugin.js:58:30
+      1  100.0%        LazyCompile: ~applyPlugins /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:30:64
+      1  100.0%          LazyCompile: ~Compilation.getPath /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Compilation.js:879:41
+      1  100.0%            LazyCompile: createChunkAssets /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Compilation.js:812:69
+      1    4.2%      LazyCompile: ~pp.parseMaybeAssign /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:99:32
+      1  100.0%        LazyCompile: ~pp.parseExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:83:31
+      1  100.0%          LazyCompile: ~pp.parseStatement /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1687:30
+      1  100.0%            LazyCompile: ~pp.parseTopLevel /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1644:29
+      1    4.2%      LazyCompile: ~pp.buildBinary /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:179:27
+      1  100.0%        LazyCompile: ~pp.parseExprOp /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:162:27
+      1  100.0%          LazyCompile: ~pp.parseExprOps /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:148:28
+      1  100.0%            LazyCompile: ~pp.parseMaybeConditional /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:130:37
+      1    4.2%      LazyCompile: ~module.exports /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-loader/index.js:28:26
+      1  100.0%        Function: ~WEBPACK_CORE_LOADER_EXECUTION /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/lib/NormalModuleMixin.js:155:56
+      1  100.0%          LazyCompile: runSyncOrAsync /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/lib/NormalModuleMixin.js:127:25
+      1  100.0%            LazyCompile: ~nextLoader /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/lib/NormalModuleMixin.js:265:21
+      1    4.2%      LazyCompile: ~module.exports /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js:6:41
+      1  100.0%        LazyCompile: ~module.exports /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-runtime/node_modules/core-js/library/modules/_wks-define.js:6:26
+      1  100.0%          Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-runtime/node_modules/core-js/library/modules/es7.symbol.observable.js:1:11
+      1  100.0%            LazyCompile: ~Module._compile module.js:366:37
+      1    4.2%      LazyCompile: ~getOptions /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1363:20
+      1  100.0%        LazyCompile: ~Parser /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1522:18
+      1  100.0%          LazyCompile: ~parse /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:881:15
+      1  100.0%            LazyCompile: parse /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:889:40
+      1    4.2%      LazyCompile: ~fs.Stats fs.js:105:20
+      1  100.0%        /Users/adam/.nvm/versions/node/v4.4.4/bin/node
+      1  100.0%          LazyCompile: ~fs.lstatSync fs.js:837:24
+      1  100.0%            LazyCompile: ~realpathSync fs.js:1379:40
+      1    4.2%      LazyCompile: ~ensureEntranceObjects /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-traverse/lib/visitors.js:324:31
+      1  100.0%        LazyCompile: ~explode /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-traverse/lib/visitors.js:61:17
+      1  100.0%          LazyCompile: ~normaliseVisitor /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/lib/transformation/plugin.js:150:64
+      1  100.0%            LazyCompile: ~Plugin /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/lib/transformation/plugin.js:63:42
+      1    4.2%      LazyCompile: ~doVariable /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/NormalModule.js:141:21
+      1  100.0%        LazyCompile: ~<anonymous> native v8natives.js:1199:16
+      1  100.0%          LazyCompile: ~InnerArrayForEach native array.js:924:27
+      1  100.0%            LazyCompile: *forEach native array.js:943:22
+      1    4.2%      LazyCompile: ~WebpackOptionsDefaulter.process /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/WebpackOptionsDefaulter.js:67:53
+      1  100.0%        LazyCompile: ~webpack /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/webpack.js:11:17
+      1  100.0%          Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/build.js:1:11
+      1  100.0%            LazyCompile: ~Module._compile module.js:366:37
+      1    4.2%      LazyCompile: ~RequireHeaderDependency /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/RequireHeaderDependency.js:7:33
+      1  100.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/CommonJsRequireDependencyParserPlugin.js:35:40
+      1  100.0%          LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1  100.0%            LazyCompile: ~walkCallExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:691:66
+      1    4.2%      LazyCompile: ~NullDependency /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/NullDependency.js:7:24
+      1  100.0%        LazyCompile: *AMDRequireDependenciesBlock /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlock.js:8:37
+      1  100.0%          LazyCompile: <anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js:23:40
+      1  100.0%            LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1    4.2%      LazyCompile: ~IsAccessorDescriptor native v8natives.js:183:30
+      1  100.0%        LazyCompile: ~IsInconsistentDescriptor native v8natives.js:195:34
+      1  100.0%          LazyCompile: ~ToPropertyDescriptor native v8natives.js:234:30
+      1  100.0%            LazyCompile: ~defineProperty native v8natives.js:763:30
+      1    4.2%      LazyCompile: ~InnerArrayForEach native array.js:924:27
+      1  100.0%        LazyCompile: *forEach native array.js:943:22
+      1  100.0%          LazyCompile: ~processCommonChunk /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/optimize/CommonsChunkPlugin.js:67:52
+      1  100.0%            LazyCompile: *InnerArrayForEach native array.js:924:27
+      1    4.2%      LazyCompile: ~EventEmitter.init events.js:23:29
+      1  100.0%        LazyCompile: ~EventEmitter events.js:5:22
+      1  100.0%          LazyCompile: ~Stream stream.js:22:16
+      1  100.0%            LazyCompile: ~Readable _stream_readable.js:81:18
+      1    4.2%      LazyCompile: ~Date native date.js:71:25
+      1  100.0%        LazyCompile: ~build /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/NormalModule.js:81:46
+      1  100.0%          LazyCompile: ~Compilation.buildModule /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Compilation.js:115:45
+      1  100.0%            LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Compilation.js:214:59
+      1    4.2%      LazyCompile: fs.readFileSync fs.js:384:27
+      1  100.0%        LazyCompile: ~Module._extensions..js module.js:414:37
+      1  100.0%          LazyCompile: ~Module.load module.js:334:33
+      1  100.0%            LazyCompile: Module._load module.js:271:24
+      1    4.2%      LazyCompile: Join native array.js:102:14
+      1  100.0%        LazyCompile: ~InnerArrayJoin native array.js:317:24
+      1  100.0%          LazyCompile: ~join native array.js:333:19
+      1  100.0%            LazyCompile: ~startup.processConfig node.js:254:35
+      1    4.2%      LazyCompile: <anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/NormalModule.js:84:66
+      1  100.0%        LazyCompile: ~<anonymous> native v8natives.js:1199:16
+      1  100.0%          LazyCompile: ~onModuleBuild /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/lib/NormalModuleMixin.js:297:24
+      1  100.0%            LazyCompile: ~nextLoader /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/lib/NormalModuleMixin.js:265:21
+      1    4.2%      LazyCompile: *test native regexp.js:132:20
+      1  100.0%        LazyCompile: ~pp.canInsertSemicolon /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1447:34
+      1  100.0%          LazyCompile: ~pp.parseExprAtom /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:267:29
+      1  100.0%            LazyCompile: ~pp.parseExprSubscripts /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:222:35
+      1    4.2%      LazyCompile: *DoRegExpExec native regexp.js:54:22
+      1  100.0%        LazyCompile: *StringSplitOnRegExp native string.js:437:29
+      1  100.0%          LazyCompile: *split native string.js:420:23
+      1  100.0%            LazyCompile: ~enable /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/debug/debug.js:136:16
+      1    4.2%      Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/build.js:1:11
+      1  100.0%        LazyCompile: ~Module._compile module.js:366:37
+      1  100.0%          LazyCompile: ~Module._extensions..js module.js:414:37
+      1  100.0%            LazyCompile: ~Module.load module.js:334:33
+      4    8.5%    LazyCompile: *fs.openSync fs.js:546:23
+      4  100.0%      LazyCompile: fs.readFileSync fs.js:384:27
+      4  100.0%        LazyCompile: *Module._extensions..js module.js:414:37
+      4  100.0%          LazyCompile: ~Module.load module.js:334:33
+      4  100.0%            LazyCompile: Module._load module.js:271:24
+      3    6.4%    LazyCompile: *realpathSync fs.js:1379:40
+      2   66.7%      LazyCompile: *tryFile module.js:106:17
+      2  100.0%        LazyCompile: ~tryExtensions module.js:116:23
+      2  100.0%          LazyCompile: ~Module._findPath module.js:128:28
+      2  100.0%            LazyCompile: *Module._resolveFilename module.js:311:35
+      1   33.3%      LazyCompile: ~toRealPath module.js:111:20
+      1  100.0%        LazyCompile: ~Module._findPath module.js:128:28
+      1  100.0%          LazyCompile: *Module._resolveFilename module.js:311:35
+      1  100.0%            LazyCompile: ~require.resolve internal/module.js:15:29
+      2    4.3%    LazyCompile: *tryFile module.js:106:17
+      2  100.0%      LazyCompile: ~tryExtensions module.js:116:23
+      2  100.0%        LazyCompile: ~Module._findPath module.js:128:28
+      2  100.0%          LazyCompile: *Module._resolveFilename module.js:311:35
+      2  100.0%            LazyCompile: Module._load module.js:271:24
+      2    4.3%    LazyCompile: *fs.stat fs.js:825:19
+      2  100.0%      LazyCompile: ~<anonymous> native v8natives.js:1199:16
+      2  100.0%        LazyCompile: *<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/FileAppendPlugin.js:18:35
+      2  100.0%          LazyCompile: ~Resolver.forEachBail /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/Resolver.js:172:42
+      2  100.0%            LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/FileAppendPlugin.js:12:34
+      2    4.3%    LazyCompile: *fs.closeSync fs.js:517:24
+      2  100.0%      LazyCompile: *<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/node_modules/graceful-fs/graceful-fs.js:48:59
+      2  100.0%        LazyCompile: fs.readFileSync fs.js:384:27
+      2  100.0%          LazyCompile: *Module._extensions..js module.js:414:37
+      2  100.0%            LazyCompile: ~Module.load module.js:334:33
+      1    2.1%    LazyCompile: *fs.readSync fs.js:585:23
+      1  100.0%      LazyCompile: fs.readFileSync fs.js:384:27
+      1  100.0%        LazyCompile: *Module._extensions..js module.js:414:37
+      1  100.0%          LazyCompile: ~Module.load module.js:334:33
+      1  100.0%            LazyCompile: Module._load module.js:271:24
+      1    2.1%    LazyCompile: *fs.fstatSync fs.js:833:24
+      1  100.0%      LazyCompile: fs.readFileSync fs.js:384:27
+      1  100.0%        LazyCompile: *Module._extensions..js module.js:414:37
+      1  100.0%          LazyCompile: ~Module.load module.js:334:33
+      1  100.0%            LazyCompile: Module._load module.js:271:24
+
+     27    3.8%  RegExp: ^(\\/?|)([\\s\\S]*?)((?:\\.{1\,2}|[^\\/]+?|)(\\.[^.\\/]*|))(?:[\\/]*)$
+     25   92.6%    LazyCompile: *exec native regexp.js:85:22
+     13   52.0%      LazyCompile: *posix.dirname path.js:529:25
+      6   46.2%        LazyCompile: ~Module._resolveLookupPaths module.js:209:38
+      6  100.0%          LazyCompile: *Module._resolveFilename module.js:311:35
+      6  100.0%            LazyCompile: Module._load module.js:271:24
+      4   30.8%        LazyCompile: ~Module._compile module.js:366:37
+      3   75.0%          LazyCompile: *Module._extensions..js module.js:414:37
+      2   66.7%            LazyCompile: *Module.load module.js:334:33
+      1   33.3%            LazyCompile: ~Module.load module.js:334:33
+      1   25.0%          LazyCompile: ~Module._extensions..js module.js:414:37
+      1  100.0%            LazyCompile: ~Module.load module.js:334:33
+      3   23.1%        LazyCompile: ~Module.load module.js:334:33
+      3  100.0%          LazyCompile: Module._load module.js:271:24
+      2   66.7%            LazyCompile: *require internal/module.js:11:19
+      1   33.3%            LazyCompile: ~Module.require module.js:350:36
+      4   16.0%      LazyCompile: *Module._resolveLookupPaths module.js:209:38
+      4  100.0%        LazyCompile: *Module._resolveFilename module.js:311:35
+      4  100.0%          LazyCompile: Module._load module.js:271:24
+      2   50.0%            LazyCompile: ~Module.require module.js:350:36
+      1   25.0%            LazyCompile: ~require internal/module.js:11:19
+      1   25.0%            LazyCompile: *require internal/module.js:11:19
+      3   12.0%      LazyCompile: *posixSplitPath path.js:410:24
+      3  100.0%        LazyCompile: ~posix.basename path.js:548:26
+      3  100.0%          LazyCompile: ~Module._resolveLookupPaths module.js:209:38
+      3  100.0%            LazyCompile: *Module._resolveFilename module.js:311:35
+      3   12.0%      LazyCompile: *posix.extname path.js:561:25
+      3  100.0%        LazyCompile: ~Module.load module.js:334:33
+      3  100.0%          LazyCompile: Module._load module.js:271:24
+      2   66.7%            LazyCompile: ~require internal/module.js:11:19
+      1   33.3%            LazyCompile: *require internal/module.js:11:19
+      2    8.0%      LazyCompile: *Module.load module.js:334:33
+      2  100.0%        LazyCompile: Module._load module.js:271:24
+      1   50.0%          LazyCompile: ~Module.require module.js:350:36
+      1  100.0%            LazyCompile: ~require internal/module.js:11:19
+      1   50.0%          LazyCompile: *require internal/module.js:11:19
+      1  100.0%            Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-traverse/lib/path/index.js:1:11
+      2    7.4%    LazyCompile: ~exec native regexp.js:85:22
+      2  100.0%      LazyCompile: ~posixSplitPath path.js:410:24
+      1   50.0%        LazyCompile: ~posix.dirname path.js:529:25
+      1  100.0%          LazyCompile: ~Module._resolveLookupPaths module.js:209:38
+      1  100.0%            LazyCompile: ~Module._resolveFilename module.js:311:35
+      1   50.0%        LazyCompile: ~posix.basename path.js:548:26
+      1  100.0%          LazyCompile: ~Module._resolveLookupPaths module.js:209:38
+      1  100.0%            LazyCompile: ~Module._resolveFilename module.js:311:35
+
+     23    3.3%  /usr/lib/system/libsystem_malloc.dylib
+     22   95.7%    /Users/adam/.nvm/versions/node/v4.4.4/bin/node
+      2    9.1%      LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1   50.0%        LazyCompile: ~evaluateExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:786:66
+      1  100.0%          LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:61:51
+      1  100.0%            LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1   50.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:234:51
+      1  100.0%          LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1  100.0%            LazyCompile: *evaluateExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:786:66
+      2    9.1%      LazyCompile: *bind native v8natives.js:1197:22
+      1   50.0%        LazyCompile: ~CachedInputFileSystem.readlink /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:143:52
+      1  100.0%          LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/ResultSymlinkPlugin.js:27:69
+      1  100.0%            LazyCompile: ~Resolver.forEachBail /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/Resolver.js:172:42
+      1   50.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/DirectoryDefaultFilePlugin.js:14:39
+      1  100.0%          LazyCompile: ~applyPluginsParallelBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:112:91
+      1  100.0%            LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/Resolver.js:102:34
+      1    4.5%      LazyCompile: ~stripBOM internal/module.js:34:18
+      1  100.0%        LazyCompile: *Module._extensions..js module.js:414:37
+      1  100.0%          LazyCompile: ~Module.load module.js:334:33
+      1  100.0%            LazyCompile: Module._load module.js:271:24
+      1    4.5%      LazyCompile: ~s /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1:457
+      1  100.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1:704
+      1  100.0%          LazyCompile: ~10../identifier /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1498:66
+      1  100.0%            LazyCompile: ~s /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1:457
+      1    4.5%      LazyCompile: ~runFactory /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/node_modules/source-map/node_modules/amdefine/amdefine.js:147:24
+      1  100.0%        LazyCompile: ~define /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/node_modules/source-map/node_modules/amdefine/amdefine.js:250:20
+      1  100.0%          Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/webpack-core/node_modules/source-map/lib/source-map/source-map-consumer.js:1:11
+      1  100.0%            LazyCompile: ~Module._compile module.js:366:37
+      1    4.5%      LazyCompile: ~readRecords /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Compiler.js:299:54
+      1  100.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Compiler.js:167:46
+      1  100.0%          LazyCompile: ~<anonymous> native v8natives.js:1199:16
+      1  100.0%            LazyCompile: ~next /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:63:50
+      1    4.5%      LazyCompile: ~pp.parseMaybeConditional /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:130:37
+      1  100.0%        LazyCompile: ~pp.parseMaybeAssign /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:99:32
+      1  100.0%          LazyCompile: ~pp.parseExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:83:31
+      1  100.0%            LazyCompile: ~pp.parseStatement /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1687:30
+      1    4.5%      LazyCompile: ~pp.nextToken /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:2492:25
+      1  100.0%        LazyCompile: ~pp.next /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:2442:20
+      1  100.0%          LazyCompile: ~pp.parseIdent /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:667:26
+      1  100.0%            LazyCompile: ~pp.parseExprAtom /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:267:29
+      1    4.5%      LazyCompile: ~plugin /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:151:43
+      1  100.0%        LazyCompile: ~EntryOptionPlugin.apply /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/EntryOptionPlugin.js:11:45
+      1  100.0%          LazyCompile: ~apply /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:162:41
+      1  100.0%            LazyCompile: ~WebpackOptionsApply.process /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/WebpackOptionsApply.js:59:49
+      1    4.5%      LazyCompile: ~onwrite _stream_writable.js:322:17
+      1  100.0%        LazyCompile: ~WritableState.onwrite _stream_writable.js:88:26
+      1  100.0%          LazyCompile: ~afterTransform _stream_transform.js:64:24
+      1  100.0%            LazyCompile: ~TransformState.afterTransform _stream_transform.js:53:33
+      1    4.5%      LazyCompile: ~arrayEach /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/lodash/_arrayEach.js:10:19
+      1  100.0%        LazyCompile: ~forEach /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/lodash/forEach.js:36:17
+      1  100.0%          LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-types/lib/index.js:389:68
+      1  100.0%            LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/lodash/_createBaseFor.js:9:18
+      1    4.5%      LazyCompile: ~Plugin /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/lib/transformation/plugin.js:63:42
+      1  100.0%        Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/lib/transformation/internal-plugins/block-hoist.js:1:11
+      1  100.0%          LazyCompile: ~Module._compile module.js:366:37
+      1  100.0%            LazyCompile: *Module._extensions..js module.js:414:37
+      1    4.5%      LazyCompile: ~Module._nodeModulePaths module.js:188:35
+      1  100.0%        LazyCompile: ~Module.load module.js:334:33
+      1  100.0%          LazyCompile: Module._load module.js:271:24
+      1  100.0%            LazyCompile: *require internal/module.js:11:19
+      1    4.5%      LazyCompile: ~Module._compile module.js:366:37
+      1  100.0%        LazyCompile: *Module._extensions..js module.js:414:37
+      1  100.0%          LazyCompile: *Module.load module.js:334:33
+      1  100.0%            LazyCompile: Module._load module.js:271:24
+      1    4.5%      LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/NormalModuleFactory.js:84:15
+      1  100.0%        LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/async/lib/async.js:725:21
+      1  100.0%          LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/async/lib/async.js:50:24
+      1  100.0%            LazyCompile: ~done /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/async/lib/async.js:238:22
+      1    4.5%      LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-runtime/node_modules/core-js/library/modules/_object-assign.js:17:31
+      1  100.0%        LazyCompile: ~InnerArrayForEach native array.js:924:27
+      1  100.0%          LazyCompile: ~forEach native array.js:943:22
+      1  100.0%            LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-runtime/node_modules/core-js/library/modules/_object-assign.js:11:58
+      1    4.5%      LazyCompile: <anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js:23:40
+      1  100.0%        LazyCompile: ~applyPluginsBailResult /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/tapable/lib/Tapable.js:42:75
+      1  100.0%          LazyCompile: ~walkCallExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:691:66
+      1  100.0%            LazyCompile: ~walkExpression /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/lib/Parser.js:550:58
+      1    4.5%      LazyCompile: *pp.updateContext /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:2344:29
+      1  100.0%        LazyCompile: *pp.eat /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:1418:19
+      1  100.0%          LazyCompile: ~pp.parsePropertyValue /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:507:34
+      1  100.0%            LazyCompile: ~pp.parseObj /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:474:24
+      1    4.5%      LazyCompile: *pp.parseMaybeAssign /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:99:32
+      1  100.0%        LazyCompile: ~pp.parseExprList /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:642:29
+      1  100.0%          LazyCompile: ~pp.parseSubscripts /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:231:31
+      1  100.0%            LazyCompile: *pp.parseExprSubscripts /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/acorn/dist/acorn.js:222:35
+      1    4.5%      Function: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/babel-core/node_modules/babel-types/lib/definitions/core.js:1:11
+      1  100.0%        LazyCompile: ~Module._compile module.js:366:37
+      1  100.0%          LazyCompile: *Module._extensions..js module.js:414:37
+      1  100.0%            LazyCompile: *Module.load module.js:334:33
+      1    4.3%    LazyCompile: *fs.stat fs.js:825:19
+      1  100.0%      LazyCompile: ~<anonymous> native v8natives.js:1199:16
+      1  100.0%        LazyCompile: *<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/FileAppendPlugin.js:18:35
+      1  100.0%          LazyCompile: *Resolver.forEachBail /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/Resolver.js:172:42
+      1  100.0%            LazyCompile: ~<anonymous> /Users/adam/src/tmp/webpack-server-sandbox/node_modules/webpack/node_modules/enhanced-resolve/lib/FileAppendPlugin.js:12:34
+
