@@ -1,4 +1,4 @@
-// var React = require("react");
+var React = require("react");
 var log = require("./lib").log;
 
 var Page1 = React.createClass({
