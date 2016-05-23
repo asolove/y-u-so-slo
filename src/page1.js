@@ -3,9 +3,7 @@ var log = require("./lib").log;
 
 var Page1 = React.createClass({
   render: function() {
-    log("Rendering");
+    log("Render page1");
     return React.DOM.div();
   }
 });
-
-React.render(Page1, document.body);
